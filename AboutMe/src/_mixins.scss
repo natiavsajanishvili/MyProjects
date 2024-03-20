@@ -1,0 +1,78 @@
+@import "./variables";
+
+@mixin heading {
+  font-family: $poppins;
+  font-weight: $font-weight-600;
+  font-size: $font-size-65;
+  line-height: $line-height-97;
+  letter-spacing: $font-letter-3;
+  color: $primary-color-black;
+}
+
+@mixin description {
+  font-family: $poppins;
+  font-weight: $font-weight-400;
+  font-size: $font-size-21;
+  line-height: $line-height-31;
+  letter-spacing: $font-letter-3;
+  color: $primary-color-black;
+}
+
+@mixin cardtitle {
+  font-weight: $font-weight-600;
+  font-size: $font-size-32;
+  line-height: $line-height-58;
+  letter-spacing: $font-letter-3;
+}
+
+@mixin cardtext {
+  font-weight: $font-weight-400;
+  font-size: $font-size-19;
+  line-height: $line-height-28;
+  letter-spacing: $font-letter-3;
+}
+
+@mixin buttonprimary($width, $height) {
+  background-color: $secondary-color-orange;
+  font-family: $poppins;
+  font-weight: $font-weight-400;
+  font-size: $font-size-21;
+  line-height: $line-height-31;
+  text-align: center;
+  letter-spacing: $font-letter-3;
+  color: $white;
+  border: none;
+  border-radius: $border-radius-5;
+  width: $width;
+  height: $height;
+}
+
+@mixin buttonsecondary($background-color, $color, $width) {
+  border: 0.4px solid $border-color;
+  border-radius: 12px;
+  background-color: $background-color;
+  padding: 10px 20px;
+  font-family: $poppins;
+  font-weight: $font-weight-400;
+  font-size: $font-size-24;
+  line-height: $line-height-36;
+  letter-spacing: $font-letter-3;
+  text-align: center;
+  color: $color;
+  width: $width;
+  height: 56px;
+}
+
+@mixin contactbutton {
+  border: none;
+  border-radius: $border-radius-14;
+  width: 222px;
+  height: 75px;
+  font-family: $poppins;
+  font-weight: $font-weight-600;
+  font-size: $font-size-24;
+  line-height: $line-height-36;
+  letter-spacing: $font-letter-3;
+  text-align: center;
+  background-color: $secondary-color-orange;
+}
