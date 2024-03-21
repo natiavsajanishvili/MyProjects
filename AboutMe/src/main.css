@@ -73,7 +73,9 @@ a {
 
 .header-section {
   width: 100%;
-  padding: 61px 250px 120px;
+  display: flex;
+  align-items: center;
+  margin: 61px 250px 120px;
 }
 .header-section .headercontainer {
   display: flex;
@@ -101,7 +103,9 @@ a {
 
 .first-section {
   width: 100%;
-  padding: 0 270px 138.76px 250px;
+  display: flex;
+  align-items: center;
+  margin: 248px 270px 138.76px 250px;
 }
 .first-section .introduction {
   display: flex;
@@ -183,6 +187,7 @@ a {
 }
 .first-section .introduction .introduction-image .myimage {
   position: relative;
+  display: flex;
   width: 485.87px;
   height: 485.87px;
 }
@@ -204,8 +209,10 @@ a {
 }
 
 .second-section {
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 0 250px 139px 200px;
+  margin: 0 250px 139px 200px;
 }
 .second-section .aboutmesection {
   display: flex;
@@ -218,6 +225,7 @@ a {
   align-items: center;
 }
 .second-section .aboutmesection .aboutme-image .imgdiv {
+  display: flex;
   position: relative;
   width: 681px;
   height: 675px;
@@ -294,14 +302,17 @@ a {
 }
 
 .third-section {
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 0 257px 139px 250px;
+  margin: 0 257px 139px 250px;
 }
 .third-section .services {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1413px;
   width: 100%;
-  flex-direction: column;
   gap: 50px;
 }
 .third-section .services .service-texts {
@@ -381,11 +392,14 @@ a {
 }
 
 .fourth-section {
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 0 247px 139px 247px;
+  margin: 0 247px 139px 247px;
 }
 .fourth-section .myprojects-container {
   display: flex;
+  align-items: center;
   max-width: 1423px;
   width: 100%;
   flex-direction: column;
@@ -563,14 +577,19 @@ a {
 }
 
 .testimonialssection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding-bottom: 139px;
+  margin-bottom: 139px;
 }
 .testimonialssection .testimonials {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  max-width: 1087px;
+  width: 100%;
 }
 .testimonialssection .testimonials .testimonialsh2 {
   font-family: "Poppins", sans-serif;
@@ -666,16 +685,18 @@ a {
 }
 
 .design-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 0 446px 139px 528px;
 }
 .design-section .design-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 932px;
   width: 100%;
-  padding: 0 29px;
 }
 .design-section .design-container .designh2 {
   font-family: "Poppins", sans-serif;
@@ -747,8 +768,10 @@ a {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  padding-top: 109px;
+  margin-top: 109px;
 }
 footer .footer-section {
   display: flex;
@@ -834,10 +857,285 @@ footer .footer-section .footerrights span {
   flex-direction: column;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1200px) {
+  .header-section {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .header-section .headercontainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .header-section .headercontainer .brand {
+    margin-right: 0;
+  }
+  .header-section .headercontainer .brand .brandname {
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+  .header-section .headercontainer .headernavigation .headerul {
+    gap: 0;
+  }
+  .header-section .headercontainer .cv {
+    margin: 0;
+    width: 150px;
+    font-size: 15px;
+  }
+  .first-section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .first-section .introduction {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .first-section .introduction .introduction-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .first-section .introduction .introduction-image .myimage .rectangle {
+    width: 360px;
+    height: 83px;
+  }
+  .first-section .introduction .introduction--text {
+    max-width: 600px;
+  }
+  .first-section .introduction .introduction--text .profession {
+    font-size: 60px;
+  }
+  .first-section .introduction .introduction--text .profession::after {
+    display: flex;
+    content: " Designer";
+    justify-content: center;
+  }
+  .first-section .introduction .introduction--text .profession-text {
+    font-size: 20px;
+    text-align: left;
+  }
   .second-section {
     width: 100%;
-    padding: 20px 20px 40px 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .second-section .aboutmesection {
+    width: 100%;
+  }
+  .second-section .aboutmesection .aboutme-image .imgdiv {
+    max-width: 600px;
+    max-height: 600px;
+  }
+  .second-section .aboutmesection .aboutme-image .imgdiv .aboutimg {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .second-section .aboutmesection .aboutme-image .imgdiv .rectangle2 {
+    width: 400px;
+    height: 83px;
+    top: 75px;
+    left: 110px;
+  }
+  .second-section .aboutmesection .aboutme-text {
+    width: 100%;
+    text-align: start;
+  }
+  .third-section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .third-section .services {
+    max-width: 1100px;
+  }
+  .fourth-section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .fourth-section .myprojects-container .projectimgcontainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth-section .myprojects-container .button-container .button {
+    font-size: 15px !important;
+  }
+  .design-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer .footer-section {
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer .footer-section .footerrights {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .header-section {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-bottom: 80px;
+  }
+  .header-section .headercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-section .headercontainer .headernavigation {
+    display: none;
+  }
+  .header-section .headercontainer .cvbutton {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .header-section .headercontainer .cvbutton .cv {
+    display: flex;
+    padding: 10px;
+  }
+  .header-section .headercontainer .burger-menu {
+    display: block;
+    margin-right: 50px;
+  }
+  .first-section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .first-section .introduction {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-section .introduction .introduction--text {
+    margin-bottom: 100px;
+  }
+  .first-section .introduction .introduction--text .profession {
+    font-size: 100px;
+  }
+  .first-section .introduction .introduction--text .profession::after {
+    display: flex;
+    content: "Designer";
+    justify-content: center;
+  }
+  .first-section .introduction .introduction--text .profession-text {
+    text-align: start;
+  }
+  .first-section .introduction .introduction-image .myimage {
+    width: 400px;
+    height: 400px;
+  }
+  .first-section .introduction .introduction-image .myimage img {
+    width: 100%;
+    height: 100%;
+  }
+  .first-section .introduction .introduction-image .myimage .rectangle {
+    width: 260px;
+    height: 83px;
+  }
+  .second-section {
+    width: 100%;
+    margin-left: 0;
+  }
+  .second-section .aboutmesection {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-section .aboutmesection .aboutme-image .imgdiv {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .second-section .aboutmesection .aboutme-image .imgdiv .aboutimg {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .second-section .aboutmesection .aboutme-image .imgdiv .rectangle2 {
+    width: 180px;
+    height: 55px;
+    top: 60px;
+    left: 110px;
+  }
+  .second-section .aboutmesection .aboutme-text {
+    width: 100%;
+    text-align: center;
+  }
+  .third-section {
+    margin-left: 0;
+  }
+  .third-section .services .card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fourth-section {
+    margin-left: 0;
+  }
+  .fourth-section .myprojects-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth-section .button-container {
+    flex-wrap: wrap-reverse;
+  }
+  .fourth-section .button-container .button {
+    font-size: 15px !important;
+  }
+  .fourth-section .projectimgcontainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonialssection {
+    margin-left: 0;
+  }
+  .testimonialssection .testimonials-img-container {
+    padding: 0 !important;
+  }
+  .design-section {
+    margin-left: 0;
+  }
+  .design-section .design-container .contactmydiv {
+    display: block;
+    max-width: 100%;
+  }
+  .design-section .design-container .contactmydiv .design-input {
+    font-size: 15px !important;
+  }
+  .design-section .design-container .contactmydiv .design-button {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header-section {
+    width: 100%;
+    margin: 20px 20px 40px 20px;
+  }
+  .first-section {
+    justify-content: center;
+  }
+  .first-section .introduction {
+    justify-content: center;
+  }
+  .second-section {
+    width: 100%;
+    margin: 20px 20px 40px 20px;
   }
   .second-section .aboutmesection {
     flex-wrap: wrap-reverse;
@@ -865,214 +1163,8 @@ footer .footer-section .footerrights span {
     width: 100%;
     text-align: center;
   }
-}
-@media screen and (max-width: 780px) {
-  .header-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-  }
-  .header-section .headercontainer .headernavigation {
+  .footer-section .headernavigation-footer {
     display: none;
-  }
-  .header-section .headercontainer .cvbutton {
-    display: flex;
-  }
-  .header-section .headercontainer .burger-menu {
-    display: block;
-  }
-  .first-section {
-    padding: 20px 20px 40px 20px;
-  }
-  .first-section .introduction {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-  }
-  .first-section .introduction .introduction--text .profession {
-    font-size: 85px !important;
-  }
-  .first-section .introduction .introduction-image .myimage {
-    width: 400px;
-    height: 400px;
-  }
-  .first-section .introduction .introduction-image .myimage img {
-    width: 100%;
-    height: 100%;
-  }
-  .first-section .introduction .introduction-image .myimage .rectangle {
-    width: 260px;
-    height: 83px;
-  }
-  .second-section {
-    width: 100%;
-    padding: 20px 20px 40px 20px;
-  }
-  .second-section .aboutmesection {
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .second-section .aboutmesection .aboutme-image .imgdiv {
-    max-width: 400px;
-    max-height: 400px;
-  }
-  .second-section .aboutmesection .aboutme-image .imgdiv .aboutimg {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-  }
-  .second-section .aboutmesection .aboutme-image .imgdiv .rectangle2 {
-    width: 180px;
-    height: 55px;
-    top: 60px;
-    left: 110px;
-  }
-  .second-section .aboutmesection .aboutme-text {
-    width: 100%;
-    text-align: center;
-  }
-  .third-section {
-    padding: 20px 20px 40px 20px;
-  }
-  .third-section .services .card-container {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .fourth-section {
-    padding: 20px 20px 40px 20px;
-  }
-  .fourth-section .myprojects-container {
-    justify-content: center;
-    align-items: center;
-  }
-  .fourth-section .button-container {
-    flex-wrap: wrap-reverse;
-  }
-  .fourth-section .button-container .button {
-    font-size: 15px !important;
-  }
-  .fourth-section .projectimgcontainer {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .testimonialssection {
-    padding: 20px 20px 40px 20px;
-  }
-  .testimonialssection .testimonials-img-container {
-    padding: 0 !important;
-  }
-  .design-section {
-    padding: 20px 20px 40px 20px;
-  }
-  .design-section .design-container .contactmydiv {
-    display: block;
-    max-width: 100%;
-  }
-  .design-section .design-container .contactmydiv .design-input {
-    font-size: 15px !important;
-  }
-  .design-section .design-container .contactmydiv .design-button {
-    font-size: 15px !important;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .header-section {
-    width: 100%;
-    padding: 0;
-  }
-  .header-section .headercontainer {
-    width: 100%;
-    padding: 10px 10px 80px 10px;
-  }
-  .header-section .headercontainer .brand {
-    padding-right: 0;
-  }
-  .header-section .headercontainer .headernavigation .headerul {
-    gap: 0;
-  }
-  .header-section .headercontainer .cv {
-    padding: 0;
-    font-size: 15px;
-  }
-  .first-section {
-    width: 100%;
-    padding: 20px 20px 200px 20px;
-  }
-  .first-section .introduction {
-    width: 100%;
-    gap: 30px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .first-section .introduction .introduction-image {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  .first-section .introduction .introduction-image .myimage .rectangle {
-    width: 360px;
-    height: 83px;
-  }
-  .second-section {
-    width: 100%;
-    padding: 20px 20px 200px 20px;
-  }
-  .second-section .aboutmesection {
-    width: 100%;
-  }
-  .second-section .aboutmesection .aboutme-image .imgdiv {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  .second-section .aboutmesection .aboutme-image .imgdiv .aboutimg {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-  }
-  .second-section .aboutmesection .aboutme-image .imgdiv .rectangle2 {
-    width: 460px;
-    height: 83px;
-    top: 75px;
-    left: 110px;
-  }
-  .second-section .aboutmesection .aboutme-text {
-    width: 100%;
-    text-align: center;
-  }
-  .third-section {
-    width: 100%;
-    padding: 20px 20px 200px 20px;
-  }
-  .fourth-section {
-    width: 100%;
-    padding: 20px 20px 200px 20px;
-  }
-  .fourth-section .myprojects-container .projectimgcontainer {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .design-section {
-    width: 100%;
-    padding: 20px 20px 200px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer {
-    max-width: 100%;
-    width: 100%;
-  }
-  .footer .footer-section {
-    max-width: 100%;
-    width: 100%;
-  }
-  .footer .footer-section .footerrights {
-    max-width: 100%;
-    width: 100%;
   }
 }
 
