@@ -873,10 +873,16 @@ footer .footer-section .footerrights span {
   }
   .header-section .headercontainer .brand .brandname {
     margin-bottom: 0;
-    font-size: 30px;
+    font-size: 25px;
   }
   .header-section .headercontainer .headernavigation .headerul {
     gap: 0;
+  }
+  .header-section .headercontainer .headernavigation .headerul .headerli {
+    padding: 5px 7px;
+  }
+  .header-section .headercontainer .headernavigation .headerul .headerli a {
+    font-size: 18px;
   }
   .header-section .headercontainer .cv {
     margin: 0;
@@ -1120,6 +1126,15 @@ footer .footer-section .footerrights span {
   }
   .design-section .design-container .contactmydiv .design-button {
     font-size: 15px !important;
+  }
+  .headernavigation-footer .headerul {
+    padding: 5px 7px;
+  }
+  .headernavigation-footer .headerul li {
+    padding: 5px 7px;
+  }
+  .headernavigation-footer .headerul li a {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 576px) {
