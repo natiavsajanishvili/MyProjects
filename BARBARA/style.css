@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 130px;
+  background-color: #02361d;
+}
+
+.barbare-j {
+  display: flex;
+  width: 239px;
+  height: 45px;
+  font-size: 45px;
+  line-height: 45px;
+  margin-top: 43px;
+  margin-left: 120px;
+  color: #f59300;
+  font-weight: 700;
+}
+.search {
+  display: flex;
+  width: 659px;
+  height: 53px;
+  margin-top: 39px;
+  margin-left: 58px;
+  border-radius: 15px;
+  background-color: #02361d;
+  font-weight: 700;
+}
+input:focus {
+  outline: none;
+}
+input[type="search"]::placeholder {
+  width: 57px;
+  height: 18px;
+  padding-top: 17px;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 18px;
+}
+.srch {
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 57px;
+  left: 680px;
+  width: 20.27px;
+  height: 20.27px;
+}
+.list-text {
+  width: 161px;
+  height: 24px;
+  margin-top: 55px;
+  margin-bottom: 51px;
+  margin-left: 59px;
+  font-weight: 700;
+  font-size: medium;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.dropdown {
+  position: relative;
+  right: 30px;
+  top: -6px;
+  width: 14.06px;
+  height: 7.03px;
+  margin: 63px 119.94px 59.97px 10px;
+  border: 2px solid rgba(245, 245, 245, 0);
+  cursor: pointer;
+}
+
+.drop-icon {
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: -15px;
+  top: 50px;
+  background-color: #fff7f7;
+  width: 468px;
+  height: 311px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* ------sufra------- */
+
+.sufra {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.sufra-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.first-word-color {
+  position: absolute;
+  color: #ffffff;
+  width: 700;
+  font-size: 45px;
+  height: 45px;
+  top: 166px;
+  right: 119px;
+}
+
+.first-word-color::before {
+  content: "Georgian ";
+  color: #f59300;
+}
+/* ---seection 1--- */
+
+.card-group {
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  height: 459px;
+  padding-left: 125px;
+  padding-right: 125px;
+  background-color: #f0e7e7;
+}
+.card {
+  margin-top: 107px;
+  width: 239px;
+  height: 271px;
+}
+.card-img-top {
+  width: 100%;
+  height: 224px;
+}
+.card-body {
+  display: flex;
+  justify-content: center;
+  height: 27px;
+  margin-top: 12px;
+}
+.card-text {
+  line-height: 26.63px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #595252;
+}
+/* ---section- 2 */
+.section-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+  height: 650px;
+}
+.barbares-section {
+  margin: 167px 0 121px 31px;
+  width: 416px;
+  height: 377px;
+}
+
+.barbares-book {
+  /* max-width: 100%;
+  max-height: 100%; */
+  object-fit: contain;
+}
+
+.poster-section {
+  position: absolute;
+  left: 320px;
+  top: 0;
+  margin-left: 40px;
+  margin-top: 80px;
+  height: 387px;
+  width: 453px;
+}
+.poster {
+  /* max-width: 100%; */
+  max-height: 100%;
+  object-fit: contain;
+}
+.cookbook {
+  width: 427px;
+  height: 154px;
+  margin-top: 160px;
+  margin-left: 61px;
+}
+h6 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+}
+.cookbook p {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+.button button {
+  width: 109px;
+  height: 61px;
+  margin-left: 61px;
+  border: 1px solid #f59300;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #f59300;
+}
+/* ----section-3----- */
+.archana {
+  display: flex;
+  width: auto;
+  height: 615px;
+  background-color: #f0e7e7;
+}
+.archana-image {
+  width: 500px;
+  height: 500px;
+  margin-top: 42px;
+  margin-left: 140px;
+  margin-right: 107px;
+  border-radius: 500px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+.achana-title {
+  display: flex;
+  flex-direction: column;
+  width: 558px;
+  height: 90px;
+  margin-right: 135px;
+  margin-top: 139px;
+}
+.achana-title h5 {
+  font-weight: 600;
+  font-size: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #000000;
+  margin-bottom: 70px;
+}
+.line {
+  width: 564px;
+  height: 40px;
+  border-bottom: 1px solid #f59300;
+  margin-bottom: 41px;
+}
+.achana-paragraph {
+  width: 477px;
+  height: 189px;
+  text-align: justify;
+}
+.achana-paragraph p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26.63px;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+}
+.collection {
+  display: flex;
+}
+.collection-title {
+  height: 45px;
+  margin-top: 70px;
+  margin-left: 144px;
+}
+/* -----collection section---- */
+.recipes-collection {
+  /* max-width: 1440px; */
+  padding-left: 56px;
+  padding-right: 56px;
+}
+.divoftext {
+  margin-left: 144px;
+}
+.classictext {
+  margin-left: 144px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  width: 688px;
+}
+
+p {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 45px;
+  position: relative;
+}
+.classictext::after {
+  content: "";
+  border: 1px solid #f59300;
+  width: 100%;
+  position: absolute;
+  top: 73px;
+  left: 9px;
+}
+
+.image-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 80px 120px 0;
+  max-width: 1440px;
+}
+.item {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  align-items: flex-start;
+  width: 100%;
+  height: 130px;
+  margin-top: 20px;
+  background-color: #02361d;
+}
