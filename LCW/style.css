@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url(./reset.css); */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+}
+ul li {
+  font-size: 15px;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: rgb(18, 112, 195);
+  transition-duration: 5s;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+.product-container {
+  padding: 50px;
+  display: flex;
+  justify-content: left;
+  background-color: rgb(116, 174, 240);
+}
+h1 {
+  text-align: center;
+  font-size: 15px;
+  line-height: 55px;
+  color: wheat;
+}
+
+/* --rollingstone---- */
+.rollingstone {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  margin: 10px 0 10px;
+  background-color: #dfecf4;
+}
+.morbenalistriqoni {
+  animation: roll 15s linear infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ----card section---- */
+.card-container {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+  gap: 40px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.card {
+  height: 420px;
+  width: 300px;
+  padding: 50px;
+  box-shadow: 1px 1px 1px 2px rgba(128, 128, 128, 0.446);
+  border-radius: 10px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+}
+img:hover {
+  box-shadow: 2px;
+}
+.card:hover {
+  box-shadow: 2px 2px 2px 4px rgba(128, 128, 128, 0.446);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card h2 {
+  font-size: 15px;
+  color: gray;
+}
+.buybutton {
+  margin: 15px;
+}
+/* ------sale section----------- */
+
+.sale-section {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  gap: 40px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.sale-card {
+  position: relative;
+  height: 500px;
+  width: 300px;
+  padding: 30px 30px 0 30px;
+  border-radius: 10px;
+  background-color: #ebe2e2;
+  text-align: left;
+  transition: ease;
+}
+.sale-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.sale-card img {
+  width: 100%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.first-text {
+  padding-top: 9px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #918a8a;
+}
+.second-text {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #918a8a;
+}
+.third-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a2376;
+}
+.position {
+  position: absolute;
+  top: 50px;
+  left: 220px;
+}
+
+.position img {
+  height: 40px;
+  width: 50px;
+}
+.pos {
+  width: 100%;
+}
+
+/* -----CHRISTMAS SECTION------ */
+.christmas-section {
+  height: 800px;
+  width: 100vw;
+  margin-top: 30px;
+}
+.first-baner img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+/* -------CHRISTMAS PAGE------- */
+.christmas-container {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  gap: 40px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.ch-card {
+  height: 450px;
+  width: 300px;
+  border: 1px solid rgb(236, 224, 224);
+  box-shadow: 1px 1px 1px 1px rgba(213, 216, 219, 0.178);
+  transition: ease-in-out;
+  position: relative;
+}
+
+.ch-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.ch-image {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 3px;
+}
+.text {
+  padding-left: 10px;
+  text-align: left;
+}
+#prc {
+  margin-bottom: 15px;
+}
+
+.ch-card h1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: black;
+}
+.ch-card h2 {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: gray;
+}
+.ch-card h3 {
+  font-size: 20px;
+  color: rgb(53, 8, 175);
+}
+.price-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-top: 5px;
+}
+
+.old {
+  display: flex;
+  text-decoration: line-through;
+  font-size: 20px;
+  padding-left: 10px;
+  text-align: left;
+  color: rgba(48, 44, 44, 0.289);
+}
+.final {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #2a1bd538;
+}
+
+.final-price-text {
+  font-size: 7px;
+  color: #0a1aa8;
+  padding-bottom: 7px;
+}
+.final-price {
+  font-size: medium;
+  color: #0a1aa8;
+  font-weight: bold;
+}
+
+.sale-position {
+  display: flex;
+  position: absolute;
+  height: 30px;
+  width: 40px;
+  top: 10px;
+  left: 30px;
+  background-color: #000000;
+  color: orange;
+  align-items: center;
+}
+
+/* -------benefits section------ */
+.benefit-section {
+  display: flex;
+  width: auto;
+  margin: 30px 225px 30px;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.benefit-area {
+  width: 300px;
+  height: 200px;
+  background-color: var(--bg-color);
+  text-align: center;
+}
+.benefit-area h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+.benefit-area p {
+  font-size: 12px;
+  color: var(--title-color);
+}
+.bi {
+  width: 70px;
+  height: 80px;
+  margin: 10px 0px 15px;
+}
+
+/* ------footer------- */
+footer {
+  background-color: #fafafa;
+  text-align: center;
+}
+.footer-logo {
+  font-size: 54px;
+  color: #1a2376;
+}
+.author {
+  font-size: 12px;
+  color: #871c8f;
+}
+
+@media screen and (max-width: 768px) {
+  .ch-card {
+    max-width: 40%;
+    margin: 0 auto;
+  }
+
+  .rollingstone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ch-card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .rollingstone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sale-card {
+    max-width: 40%;
+    height: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sale-card {
+    max-width: 100%;
+    height: 50%;
+    margin: 0 auto;
+  }
+}
