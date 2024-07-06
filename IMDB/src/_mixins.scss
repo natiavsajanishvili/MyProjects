@@ -1,0 +1,92 @@
+@import "./variables";
+
+@mixin heading($color, $font-weight) {
+  font-family: $lato;
+  font-weight: $font-weight;
+  font-size: $font-size-24;
+  line-height: $line-height-24;
+  color: $color;
+}
+@mixin asideText($color) {
+  font-family: $lato;
+  font-weight: $font-weight-600;
+  font-size: $font-size-18;
+  line-height: $line-height-21;
+  color: $color;
+}
+
+@mixin asideCategory {
+  font-family: $lato;
+  font-weight: $font-weight-700;
+  font-size: $font-size-18;
+  line-height: $line-height-21;
+  color: $white;
+  opacity: $opacity-67;
+}
+
+@mixin title($line-height, $font-size, $color) {
+  font-family: $lato;
+  font-weight: $font-weight-800;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin episode {
+  font-family: $lato;
+  font-weight: $font-weight-700;
+  font-size: $font-size-18;
+  line-height: $line-height-18;
+  color: $white;
+  opacity: $opacity-67;
+}
+
+@mixin buttonYellow($width) {
+  width: $width;
+  height: 57px;
+  border-radius: $button-border-radius-15;
+  background-color: $yellow;
+  color: $black;
+  font-family: $lato;
+  font-weight: $font-weight-800;
+  font-size: $font-size-18;
+  line-height: $line-height-18;
+}
+
+@mixin transparentButton {
+  width: 57px;
+  height: 57px;
+  border-radius: $button-border-radius-15;
+  background-color: $white;
+  opacity: $opacity-20;
+  color: $white;
+  font-family: $lato;
+  font-weight: $font-weight-800;
+  font-size: $font-size-18;
+  line-height: $line-height-18;
+}
+
+@mixin movieTitle {
+  font-family: $lato;
+  font-weight: $font-weight-600;
+  font-size: $font-size-30;
+  line-height: $line-height-32;
+  color: #ffffff;
+}
+
+@mixin movieDate {
+  font-family: $lato;
+  font-weight: $font-weight-700;
+  font-size: $font-size-18;
+  line-height: $line-height-21;
+  color: $white;
+  opacity: $opacity-67;
+}
+
+@mixin movieDescription($font-size, $line-height) {
+  font-family: $lato;
+  font-weight: $font-weight-600;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: #ffffff;
+}

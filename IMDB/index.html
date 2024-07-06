@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./src/main.css" />
+    <title>Honey Movies</title>
+  </head>
+  <body class="body">
+    <header>
+      <div id="header-container">
+        <div id="logodiv">
+          <img src="./Images/Logo.svg" alt="logo" />
+        </div>
+        <nav class="navigation">
+          <ul id="ul">
+            <li class="list">
+              <a class="a" href="#">Movies</a>
+            </li>
+            <li class="list">
+              <a class="a" href="#">TV Shows</a>
+            </li>
+            <li class="list">
+              <a class="a" href="#">Anime</a>
+            </li>
+            <button class="backgroundMode dark">
+              <i class="fa fa-sun-o"></i>Light
+            </button>
+          </ul>
+
+          <form class="searchForm" action="#">
+            <div class="searchdiv">
+              <img
+                class="searchicon"
+                src="./Images/Search....svg"
+                alt="search"
+              />
+              <input class="input" type="search" placeholder="Search" />
+              <img src="./Images/Filter.svg" alt="filter" />
+            </div>
+
+            <ul class="searchedList"></ul>
+          </form>
+        </nav>
+        <div class="hamburger">
+          <div class="lines">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+          </div>
+          <div class="off">
+            <div class="offscreen">
+              <a class="burg-a" href="#">Movies</a>
+              <a class="burg-a" href="#">TV Shows</a>
+              <a class="burg-a" href="#">Anime</a>
+              <button class="backgroundMode">lite/dark</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="homeSection">
+      <aside id="aside">
+        <div id="asideDiv">
+          <span class="menuSpan">Menu</span>
+          <ul class="menu">
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/Icon.svg"
+                  alt="home"
+                />Home</a
+              >
+            </li>
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/Discover.svg"
+                  alt="discover"
+                />Discover</a
+              >
+            </li>
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/Award.svg"
+                  alt="Awards"
+                />Awards</a
+              >
+            </li>
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/Celebrities.svg"
+                  alt="Celebrities"
+                />Celebrities</a
+              >
+            </li>
+          </ul>
+          <span class="menuSpan">Library</span>
+          <ul class="menu">
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/Recent.svg"
+                  alt="Recent"
+                />Recent</a
+              >
+            </li>
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/TopRated.svg"
+                  alt="Rated"
+                />Top Rated</a
+              >
+            </li>
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/Downloaded.svg"
+                  alt="Downloaded"
+                />Downloaded</a
+              >
+            </li>
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/Playlists.svg"
+                  alt="Playlists"
+                />Playlists</a
+              >
+            </li>
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/Watchlist.svg"
+                  alt="Watchlists"
+                />Watchlists</a
+              >
+            </li>
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/Completed.svg"
+                  alt="Completed"
+                />Completed</a
+              >
+            </li>
+          </ul>
+          <span class="menuSpan">General</span>
+          <ul class="menu">
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/Settings.svg"
+                  alt="Settings"
+                />Settings</a
+              >
+            </li>
+            <li class="menu-list">
+              <a class="menuItem" href="#"
+                ><img
+                  class="asideIcon"
+                  src="./Images/LogOut.svg"
+                  alt="logout"
+                />Log Out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div id="homeDiv">
+        <div id="sliderContainer">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <img
+                src="./Images/crown.png"
+                alt="Slide 1"
+                class="swiper-slide"
+              />
+
+              <img
+                src="./Images/Loki.webp"
+                alt="Slide 1"
+                class="swiper-slide"
+              />
+
+              <img
+                src="./Images/morty.png"
+                alt="Slide 1"
+                class="swiper-slide"
+              />
+
+              <img
+                src="./Images/chernobyl.png"
+                alt="Slide 1"
+                class="swiper-slide"
+              />
+            </div>
+            <div class="swiper-button-next">
+              <img src="./Images/Next.png" alt="next" />
+            </div>
+            <div class="swiper-button-prev">
+              <img src="./Images/Previous.png" alt="previous" />
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="watchListButton">
+              <img src="./Images/plus.png" alt="plus" />Watchlist
+            </div>
+            <div class="watchNowButton">Watch Now</div>
+          </div>
+        </div>
+        <h2 class="moviesH">Movies</h2>
+        <div class="movies-poster-container">
+          <div class="poster-card-container firstCard">
+            <div class="linear">
+              <div class="poster-text">
+                <h2 class="card-title">Loki</h2>
+                <img
+                  class="reviewStar"
+                  src="./Images/Review.png"
+                  alt="review"
+                />
+                <div class="poster-para">
+                  <p class="posterP">6 Ep</p>
+                  <p class="posterP">Superhero</p>
+                </div>
+                <div class="posterButtons">
+                  <div class="plusButton">
+                    <img class="plus" src="./Images/plus.png" alt="plus" />
+                  </div>
+                  <button id="moreInfoButton">More info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="poster-card-container secondCard">
+            <div class="linear">
+              <div class="poster-text">
+                <h2 class="card-title">Chernobyl</h2>
+                <img
+                  class="reviewStar"
+                  src="./Images/Review.png"
+                  alt="review"
+                />
+                <div class="poster-para">
+                  <p class="posterP">5 Ep</p>
+                  <p class="posterP">Mini Series</p>
+                </div>
+                <div class="posterButtons">
+                  <div class="plusButton">
+                    <img class="plus" src="./Images/plus.png" alt="plus" />
+                  </div>
+                  <button id="moreInfoButton">More info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="poster-card-container thirdCard">
+            <div class="linear">
+              <div class="poster-text">
+                <h2 class="card-title">Rick and Morty</h2>
+                <img
+                  class="reviewStar"
+                  src="./Images/ReviewHalf.png"
+                  alt="review"
+                />
+                <div class="poster-para">
+                  <p class="posterP">49 Ep</p>
+                  <p class="posterP">Fantasy</p>
+                </div>
+                <div class="posterButtons">
+                  <div class="plusButton">
+                    <img class="plus" src="./Images/plus.png" alt="plus" />
+                  </div>
+                  <button id="moreInfoButton">More info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ratedMoviesSection">
+      <h2 class="ratedMoviesSectionTitle">Top Rated Movies</h2>
+      <div id="top-rated-container"></div>
+    </section>
+
+    <script src="./src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        loop: true,
+        direction: "horizontal",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>

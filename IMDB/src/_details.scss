@@ -1,0 +1,146 @@
+@import "./variables";
+@import "./mixins";
+.body {
+  position: relative;
+  margin: 0;
+}
+#background-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(25%);
+}
+#backHomediv {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  margin-left: 50px;
+  background-color: rgba(249, 249, 249, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#back {
+  @include title(28px, 28px, rgba(255, 255, 255, 1));
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 172px;
+}
+.detailsSection {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#detailsContainer {
+  max-width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-left: 100px;
+}
+
+#aboutMovie-container {
+  display: flex;
+  height: auto;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.movieName {
+  color: $white;
+  font-family: $lato;
+  margin-bottom: 20px;
+}
+#detailsStars {
+  margin-bottom: 10px;
+  color: $yellow;
+}
+
+#views {
+  color: $white;
+  font-family: $lato;
+  margin-bottom: 20px;
+}
+#imdbIcon {
+  width: 70px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+#movieDescription {
+  color: $white;
+  font-family: $lato;
+  max-width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.detailsButtons {
+  width: 100%;
+  display: flex;
+  gap: 46px;
+}
+.buttonWhite {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  width: 160px;
+  height: 56px;
+  border-radius: 15px;
+  padding: 19px, 25px, 19px, 25px;
+  background-color: rgba(249, 249, 249, 0.2);
+  gap: 10px;
+  font-family: $lato;
+  font-weight: $font-weight-800;
+  font-size: $font-size-18;
+  line-height: $line-height-18;
+  color: rgba(249, 249, 249, 1);
+  z-index: 99;
+}
+.buttonYellow {
+  width: 190px;
+  height: 57px;
+  border-radius: $button-border-radius-15;
+  background-color: $yellow;
+  color: $black;
+  font-family: $lato;
+  font-weight: $font-weight-800;
+  font-size: $font-size-18;
+  line-height: $line-height-18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 19px, 47px, 19px, 47px;
+  gap: 10px;
+  z-index: 99;
+}
+#poster-card-container {
+  position: relative;
+}
+#detailsPoster {
+  border-radius: 20px 20px 0 0;
+}
+#detailsTopRated {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 140px;
+  background-color: $yellow;
+  color: black;
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 21px;
+  border-radius: 0 20px;
+}
